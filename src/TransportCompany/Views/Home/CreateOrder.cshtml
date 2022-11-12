@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Создание заказа";
+}
+<div class="body">
+    <h1>Заполните форму и оформите доставку уже сейчас!</h1>
+    <form class="obratnuj-zvonok" autocomplete="off" method='post'>
+        <div class="form">
+            <div>
+                <label>Имя <span>*</span></label>
+                <input id="userFirstName" type='text' name='username' required>
+            </div>
+            <div>
+                <label>Фамилия <span>*</span></label>
+                <input id="userLastName" type='text' name='usersurname' required>
+            </div>
+            <div>
+                <label>Номер телефона <span>*</span> (+7)</label>
+                <input id="userPhoneNumber" type='text' name='usernumber' required>
+            </div>
+            <div>
+                <label>Адресс забора <span>*</span></label>
+                <input id="userSendAddress" type='text' name='usernumber' required>
+            </div>
+            <div>
+                <label>Адресс доставки <span>*</span></label>
+                <input id="userDeliveryAddress" type='text' name='usernumber' required>
+            </div>
+            <div>
+                <label>Сообщение</label>
+                <input id="userCommentMessage" type='text' name='question'>
+            </div>
+        </div>
+    </form>
+    <div class="centeredButton">
+        <button id="createOrderBtn" class="bot-send-mail">Оформить заявку</button>
+    </div>
+    <p class="privacy">Перед отправкой формы, пожалуйста, ознакомьтесь с <a href="/Home/Privacy">политикой конфиденциальности</a></p>
+</div>

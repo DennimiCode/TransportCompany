@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css">
+    <link href="https://allfont.ru/allfont.css?fonts=andantino-script" rel="stylesheet" type="text/css" />
+    <link href="https://allfont.ru/allfont.css?fonts=aquarelle" rel="stylesheet" type="text/css" />
+    <link href="~/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/favicon.ico" />
+    <title>Transport Company | @ViewBag.Title</title>
+</head>
+<body bgcolor="#f5f5f5">
+    <div class="header">
+        <div class="tMenu">
+            <a href="/Home/Index" id="main">Transport Company</a>
+            <a href="/Home/CreateOrder" id="order">Создать заказ</a>
+        </div>
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+    
+    <div class="footer">
+        <div>
+            <Table>
+                <tr>
+                    <td class="fText">8(800)555-35-35</td>
+                    <td class="fText">Грузоперевозки</td>
+                </tr>
+                <tr>
+                    <td class="fText">г. Москва, Сходненский туп., 16</td>
+                    <td class="fText">
+                        <ul>
+                            <li><a class="fA" href="/Home/Index">Главная</a></li>
+                            <li><a class="fA" href="/Home/CreateOrder">Создать заказ</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fText">zakaz@transcom.ru</td>
+                </tr>
+                <tr>
+                    <td class="fText">Сайт грузоперевозок «Transport Company»</td>
+                </tr>
+                <tr>
+                    <td class="fText">© 2001-2022.</td>
+                </tr>
+            </Table>
+        </div>
+    </div>
+    <script type="text/javascript" src="~/js/sendRequestScript.js"></script>
+</body>
+</html>
